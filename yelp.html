@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find Restaurants on Yelp</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="yelp.js"></script>
+
+  </head>
+  <body onload="initialize();">
+    <form>
+       
+       <label>Search For: <input type="text" id="search"/></label>
+       <label>Level:
+         <select id="level">
+           <option>5</option>
+           <option>10</option>
+           <option>15</option>
+           <option>20</option>
+         </select>
+         <input type="button" onclick="findRestaurants();" value="Find"/>
+    </form>
+    <hr>
+    <div id="map" style="width: 600px; height: 500px;"></div>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCta5IGLzedU9W-InNE5xi37EXqpzrNWuU&libraries=maps,marker&v=beta,geometry"
+    async
+    defer
+    ></script>
+
+
+    
+  </body>
+</html>
